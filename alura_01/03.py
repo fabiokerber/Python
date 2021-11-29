@@ -6,17 +6,18 @@ numero_secreto = 42
 
 chute_str = input("Digite o seu numero: ") #RECEBE UM VALOR
 
-print(type (chute_str)) #PRINTA TYPE STR
-
-print("Você digitou: " , chute_str) #RECEBE O VALOR EM STRING. POR PADRAO SEMPRE ENTRA STRING
-
 chute = int(chute_str) #CHUTE RECEBE O VALOR DE chute_str EM integer
 
-print(type (chute)) #PRINTA TYPE INT
+acertou = chute == numero_secreto
+maior   = chute > numero_secreto
+menor   = chute < numero_secreto
 
-if ( numero_secreto == chute ):
+if (acertou):
     print("Você acertou!")
 else:
-    print("Você errou abestado!")
+    if(maior):
+        print("Você errou abestado! Seu chute foi maior que o numero secreto.")
+    elif(menor):
+        print("Você errou abestado! Seu chute foi menor que o numero secreto.")
 
 print("Fim do jogo.")
