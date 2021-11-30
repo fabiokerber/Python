@@ -8,7 +8,7 @@ rodada = 1
 
 while(rodada <= total_de_tentativas):
 
-    print("Tentativa", rodada, "de 3.")
+    print("Tentativa {} de {}".format (rodada, total_de_tentativas))
     chute_str = input("Digite o seu numero: ") #RECEBE UM VALOR
     chute = int(chute_str) #CHUTE RECEBE O VALOR DE chute_str EM integer
 
